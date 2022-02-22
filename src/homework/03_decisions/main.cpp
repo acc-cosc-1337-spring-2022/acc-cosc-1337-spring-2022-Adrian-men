@@ -26,33 +26,18 @@ GPA 3.0
 */
 int main() 
 {
-	string letter_grade;
-	int credit_hours, sum_credit_hours = 0, sum_credit_points = 0;
+	int grade;
 
-	cout << "Enter letter grade: ";
-	cin >> letter_grade;
-	cout << "Enter credit hours: ";
-	cin >> credit_hours;
-	sum_credit_points += get_grade_points(letter_grade) * credit_hours;
-	sum_credit_hours += credit_hours;
+	cout << "Enter a grade number: ";
+	cin >> grade;
 
-	cout << "Enter letter grade: ";
-	cin >> letter_grade;
-	cout << "Enter credit hours: ";
-	cin >> credit_hours;
-	sum_credit_points += get_grade_points(letter_grade)  * credit_hours;
-	sum_credit_hours += credit_hours;
+	cout << "Enter a grade number: ";
+	cin >>grade;
 
-	cout << "Enter letter grade: ";
-	cin >> letter_grade;
-	cout << "Enter credit hours: ";
-	cin >> credit_hours;
-	sum_credit_points += get_grade_points(letter_grade)  * credit_hours;
-	sum_credit_hours += credit_hours;
+	cout<<get_letter_grade_using_if(grade)<<"\n";
 
+	cout<<get_letter_grade_using_if(grade)<<"\n";
 
-	double gpa = calculate_gpa(sum_credit_hours, sum_credit_points);
-	cout << "GPA: " << gpa;
 
 	return 0;
 }
