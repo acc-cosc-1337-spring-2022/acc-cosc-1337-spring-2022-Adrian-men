@@ -1,9 +1,13 @@
 #include<iostream>
-#include
+#include <string>
+
+using std::cout; using std::string;
 
 int main() 
 {
-	//Create string variable and display it		
+	//Create string variable and display it	
+	string name = "Joe";
+	cout<<"Name is : "<<name<<"\n";	
 
 	return 0;
 }
