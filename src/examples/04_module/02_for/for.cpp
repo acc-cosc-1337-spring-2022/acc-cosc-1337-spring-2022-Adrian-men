@@ -23,9 +23,9 @@ void display_numbers(int num)
 
 void display(std::string str)
 {
-    for(int i-0; i < str.size(); i++)
+    for(int i=0; i < str.size(); i++)
     {
-        std::cout<<str[i]<<
+        std::cout<<str[i]<<"\n";
     }
 }
 

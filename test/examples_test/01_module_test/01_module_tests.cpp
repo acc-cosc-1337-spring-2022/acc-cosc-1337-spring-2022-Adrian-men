@@ -20,7 +20,7 @@ TEST_CASE("Test echo variable", "test echoes"){
 
 TEST_CASE("Test get total function"){
 	REQUIRE(10 == get_total(2, 5.00));
-	REQUIRE(5 == echo_variable(10, 5.5));
+	REQUIRE(55 == get_total(10, 5.5));
 }
 
 /*test case add_to_double_1 with 0 as parameter*/
@@ -49,7 +49,7 @@ TEST_CASE("test get ascii values function ")
 }
 
 /*test case string test ASCII values Joe characters are equal to 74, 111, and 101*/
-TEST_CASE("Test string characters for ASCII calue")
+TEST_CASE("Test string characters for ASCII value")
 {
 	std::string name = "Joe";
 	REQUIRE(74 == name[0]);
