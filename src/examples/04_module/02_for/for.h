@@ -3,4 +3,4 @@
 //that accepts an int and returns void
 void display_numbers(int num);
 
-void display(std::string str)
+void display(std::string str);

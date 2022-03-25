@@ -1,10 +1,8 @@
 //write include statements
-#include<string>
-#include<iostream>
 #include "sequence.h"
 
 //write using statements for cin cout
-
+using std::cout; using std::cin;
 
 /*
 Write code to create a vector of string names, add the values "John", "Mary", "Patty",
@@ -18,6 +16,8 @@ give you a valid name.
 
 int main()
 {
+	run_menu();
+	
 
 	return 0;
 }
