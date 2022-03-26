@@ -13,6 +13,14 @@ and displays the numbers to screen using an indexed for loop as follows: 9 10 99
 
 
 */
+void loop_vector_w_index(std::vector<int>nums)
+{
+    for(int i = 0; i < nums.size(); i++)
+    {
+        nums[1] = -1;
+    }
+
+}
 
 
 
@@ -22,6 +30,11 @@ Displays the incoming parameter vector numbers to screen using an indexed for lo
 
 @param vector<int>
 */
+void loop_vector_w_index_ref(std::vector<int> &nums)
+{
+    
+}
+
 
 
 
@@ -33,10 +46,27 @@ Displays the incoming parameter vector numbers to screen using an indexed for lo
 */
 
 
+
 /*
 Write code for function loop_vector_w_index_const_ref
 Displays the incoming parameter vector numbers to screen use indexed loop
 
 @param const vector<int>&
 */
+void loop_vec_w_for_range(std::vector<int> nums)
+{
+    for(auto n: nums)
+    {
+        n = -1;
+
+    }
+}
+
+void loop_vec_w_for_range_ref(std::vector<int> nums)
+{
+    for(auto n: nums)
+    {
+        n= -1;
+    }
+}
 
