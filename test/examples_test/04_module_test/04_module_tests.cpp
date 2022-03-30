@@ -39,3 +39,49 @@ TEST_CASE("Test overloaded functions 1")
 	REQUIRE(1000 == get_weekly_pay(52000));
 	REQUIRE(400 == get_weekly_pay(40, 10));
 }
+
+TEST_CASE("Test case string function with copy/value parameter")
+{
+	std::string str = "joe";
+	loop_string_w_for_range(str);
+
+	REQUIRE(str == "joe");
+}
+
+TEST_CASE("Test case string function with reference parameter")
+{
+	std::string str = "joe";
+	loop_string_w_for_range(str);
+
+	REQUIRE(str == "JOE");
+}
+
+TEST_CASE("string capacity/size/length test")
+{
+	std::string name = "joe";
+
+	REQUIRE(3 == name.size());
+	require(3 == name.length());
+	require(15 == name.capacity())
+}
+
+TEST_CASE("Test vector value parameter in function")
+{
+	std::vector<int> nums = {1,31,0};
+	std::vector<int> expected = {1,31,0};
+
+	loop_vector_w_index(nums);
+
+	REQUIRE(nums == expected);
+
+}
+
+TEST_CASE("Test vector for range function w value param")
+{
+	std::vector<int> nums = {1, 31, 0};
+	std::vector<int>expected = {-1, -1, -1};
+
+	loop_vec_w_for_range(nums);
+
+	REQUIRE (nums == expected)
+;}

@@ -1,8 +1,36 @@
 #include "vec.h"
+#include <vector>
+
+using std::vector;
 
 int main() 
 {
-	std::string name = "joe";
+	vector<int> nums{1,31,0};
+	nums.push_back(5);
+	nums[0] = 5;
 
-	return 0;
+	for(auto n: nums)
+	{
+		cout<<n;
+	}
+	cout<<"\n";
+	
+	vector<int> nums1;
+	nums1.push_back(10);
+	nums1. push.pack(15);
+	nums1.push_back(7);
+	 for(auto n: nums)
+	 {
+		 cout << n <<" ; ";
+	 }
+	 
+
+
+
+
+
+	/*std::string name = "joe";
+
+	return 0;*/
+	
 }
