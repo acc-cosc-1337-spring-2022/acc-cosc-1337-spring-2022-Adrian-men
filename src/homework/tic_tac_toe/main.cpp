@@ -7,14 +7,19 @@ int main()
 {
 	TicTacToe game;
 	string first_player;
+	string get_player;
+	string get_winner;
+	string winner;
 	char choice;
 
 	do
 	{
-
-	cout<<"Enter first player (X or O)";
-	cin>>first_player;
-	game.start_game(first_player);
+	while(game.get_player() == false)
+	{
+		cout<<"Enter first player (X or O)";
+		cin>>first_player;
+		game.start_game(first_player);
+	}
 
 	int position;
 	while(game.game_over() == false)
