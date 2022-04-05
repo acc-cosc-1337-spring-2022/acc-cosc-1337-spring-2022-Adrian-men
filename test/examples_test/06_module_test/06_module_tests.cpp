@@ -26,4 +26,5 @@ TEST_CASE("Test account withdraw")
 	account.withdraw(50);
 
 	REQUIRE(450 == account.get_balance());
+}
 

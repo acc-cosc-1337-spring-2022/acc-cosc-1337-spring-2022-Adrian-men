@@ -25,8 +25,32 @@ TEST_CASE("Test tic tac toe game over for a tie")
 	game.mark_board(6);
 	REQUIRE(false == game.game_over());
 	game.mark_board(9);
-	REQUIRE(false == game.game_over());
-	game.mark_board(8);
 	REQUIRE(true == game.game_over());
+	game.mark_board(8);
+	REQUIRE(false == game.game_over());
+}
+
+TEST_CASE("Test first player set to X")
+{
+	TicTacToe game;
+	
+	game.start_game("X");
+	REQUIRE("X" == game.get_player());
+}
+
+TEST_CASE("Test first player set to O")
+{
+	TicTacToe game;
+	
+	game.start_game("O");
+	REQUIRE("O" == game.get_player());
+}
+
+TEST_CASE("Test win by first column")
+{
+	TicTacToe game;
+
+	
+
 }
 

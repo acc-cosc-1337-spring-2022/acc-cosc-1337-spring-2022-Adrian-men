@@ -8,7 +8,7 @@ int BankAccount::get_balance() const
 
 int BankAccount::get_balance_from_db()
 {
-    return rand () % 10000 + 1; //random number in range 1 to 10000
+    return rand() % 10000 + 1; //random number in range 1 to 10000
 }
 
 void BankAccount::deposit(int amount)
@@ -26,3 +26,41 @@ void BankAccount::withdraw(int amount)
         balance -= amount;
     }
 }
+
+//Free functions
+void display_balance(const BankAccount& account)
+{
+    std::cout<<"Free function balance: "<<account.get_balance()<<"\n";
+}
+
+BankAccount get_account()
+{
+    BankAccount a;
+
+    return a;
+}
+
+/*//friend function
+void friend_display_balance(BankAccount account)
+{
+    std::cout<<"Friend function balance: "account.get_balance();
+}
+
+//overload << operator
+std::ostream& operator<<(std::ostream& out, const BankAccount &);
+{
+    out<<"Operator << overload balance: "account.balance;
+
+    return out;
+}
+std::istream& operator<<(std::istream& in, BankAccount& account)
+{
+    int amount;
+    std::cout<<"enter amount: ";
+    in>>amount;
+
+    account.deposit(amount);
+
+    return in;
+
+}*/
